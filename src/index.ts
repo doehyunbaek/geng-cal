@@ -60,8 +60,10 @@ function formatEventForCalendar(event: UFCEvent): EventAttributes {
   description += `\n\nAccurate as of ${dateTimestr}`;
 
   const location = event.location;
-  const uid = event.url.href;
-  const calName = "Gen.G (LoL)";
+  const calName = "Gen.G";
+  const safe = (s: string) => s.replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  const uid = `${safe(title)}_${Date.parse(event.date)}@geng-cal`;
+
 
   const calendarEvent: EventAttributes = {
     start,

@@ -3,76 +3,76 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 PRODID:adamgibbons/ics
 METHOD:PUBLISH
-X-WR-CALNAME:Gen.G (LoL)
+X-WR-CALNAME:Gen.G
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5
+UID:KT-Rolster-vs-Gen-G_1754805600000@geng-cal
 SUMMARY:KT Rolster vs. Gen.G
-DTSTAMP:20250809T063417Z
+DTSTAMP:20250809T064517Z
 DTSTART:20250810T060000Z
 DESCRIPTION:Best of 3\nTime: exact\nStream: https://www.twitch.tv/lck\nOver
 	view: https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nhttps://lo
-	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:3
-	4 AM GMT+2
+	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:4
+	5 AM GMT+2
 END:VEVENT
 BEGIN:VEVENT
-UID:https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5
+UID:Gen-G-vs-Nongshim-RedForce_1755158400000@geng-cal
 SUMMARY:Gen.G vs. Nongshim RedForce
-DTSTAMP:20250809T063417Z
+DTSTAMP:20250809T064517Z
 DTSTART:20250814T080000Z
 DESCRIPTION:Best of 3\nTime: exact\nStream: https://www.twitch.tv/lck\nOver
 	view: https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nhttps://lo
-	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:3
-	4 AM GMT+2
+	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:4
+	5 AM GMT+2
 END:VEVENT
 BEGIN:VEVENT
-UID:https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5
+UID:Hanwha-Life-Esports-vs-Gen-G_1755410400000@geng-cal
 SUMMARY:Hanwha Life Esports vs. Gen.G
-DTSTAMP:20250809T063417Z
+DTSTAMP:20250809T064517Z
 DTSTART:20250817T060000Z
 DESCRIPTION:Best of 3\nTime: exact\nStream: https://www.twitch.tv/lck\nOver
 	view: https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nhttps://lo
-	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:3
-	4 AM GMT+2
+	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:4
+	5 AM GMT+2
 END:VEVENT
 BEGIN:VEVENT
-UID:https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5
+UID:Gen-G-vs-Nongshim-RedForce_1755684000000@geng-cal
 SUMMARY:Gen.G vs. Nongshim RedForce
-DTSTAMP:20250809T063417Z
+DTSTAMP:20250809T064517Z
 DTSTART:20250820T100000Z
 DESCRIPTION:Best of 3\nTime: exact\nStream: https://www.twitch.tv/lck\nOver
 	view: https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nhttps://lo
-	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:3
-	4 AM GMT+2
+	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:4
+	5 AM GMT+2
 END:VEVENT
 BEGIN:VEVENT
-UID:https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5
+UID:Hanwha-Life-Esports-vs-Gen-G_1755928800000@geng-cal
 SUMMARY:Hanwha Life Esports vs. Gen.G
-DTSTAMP:20250809T063417Z
+DTSTAMP:20250809T064517Z
 DTSTART:20250823T060000Z
 DESCRIPTION:Best of 3\nTime: exact\nStream: https://www.twitch.tv/lck\nOver
 	view: https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nhttps://lo
-	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:3
-	4 AM GMT+2
+	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:4
+	5 AM GMT+2
 END:VEVENT
 BEGIN:VEVENT
-UID:https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5
+UID:Gen-G-vs-KT-Rolster_1756375200000@geng-cal
 SUMMARY:Gen.G vs. KT Rolster
-DTSTAMP:20250809T063417Z
+DTSTAMP:20250809T064517Z
 DTSTART:20250828T100000Z
 DESCRIPTION:Best of 3\nTime: exact\nStream: https://www.twitch.tv/lck\nOver
 	view: https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nhttps://lo
-	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:3
-	4 AM GMT+2
+	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:4
+	5 AM GMT+2
 END:VEVENT
 BEGIN:VEVENT
-UID:https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5
+UID:T1-vs-Gen-G_1756533600000@geng-cal
 SUMMARY:T1 vs. Gen.G
-DTSTAMP:20250809T063417Z
+DTSTAMP:20250809T064517Z
 DTSTART:20250830T060000Z
 DESCRIPTION:Best of 3\nTime: exact\nStream: https://www.twitch.tv/lck\nOver
 	view: https://lol.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nhttps://lo
-	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:3
-	4 AM GMT+2
+	l.fandom.com/wiki/LCK/2025_Season/Rounds_3-5\n\nAccurate as of Aug 9\, 8:4
+	5 AM GMT+2
 END:VEVENT
 END:VCALENDAR
