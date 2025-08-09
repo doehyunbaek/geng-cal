@@ -13,14 +13,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ics
-      - name: Create Vitality.ics
+      - name: Create GenG.ics
         run: |
           npm install
           npm start
       - name: Push to repository
         run: |
-          git config --global user.name "Vitality Calendar"
+          git config --global user.name "GenG Calendar"
           git config --global user.email "vitalitycal25@gmail.com"
-          git add Vitality.ics
-          git commit -m "Update Vitality.ics"
+          git add GenG.ics
+          git commit -m "Update GenG.ics"
           git push -u origin ics

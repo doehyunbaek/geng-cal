@@ -1,31 +1,32 @@
-import { getVitalityMatches } from "./scrape.js";
+import { getGenGMatches, type UFCEvent } from "./scrape.js";
 import * as fs from "fs";
 import { createEvents, type DateArray, type EventAttributes } from "ics";
 
 /**
- * Extracts the details of recent and upcoming Vitality events, then creates an
- * ICS file named "Vitality.ics" in the current directory containing these events
+ * Pull upcoming Gen.G (LoL) matches via Leaguepedia Cargo API
+ * and write them to GenG.ics in the repo root.
  */
 async function createICS() {
   try {
-    const events = await getVitalityMatches();
+    const events = await getGenGMatches();
     if (!events?.length) throw new Error("No events retrieved");
 
-    // Convert event details in the format in accordance with the ICS generator
     const formattedEvents = events.map(formatEventForCalendar);
 
     console.log("\nDetailed events:");
     console.log(formattedEvents);
 
-    // Create Vitality.ics
-    const eventsData = createEvents(formattedEvents).value;
-    if (eventsData) fs.writeFileSync("Vitality.ics", eventsData);
+    // Create GenG.ics
+    const { value } = createEvents(formattedEvents);
+    if (value) fs.writeFileSync("GenG.ics", value);
   } catch (error) {
     console.error(error);
+    process.exitCode = 1;
   }
 }
 
 function formatEventForCalendar(event: UFCEvent): EventAttributes {
+  // event.date is an ISO UTC string (ends with Z)
   const date = new Date(event.date);
   const start: DateArray = [
     date.getFullYear(),
@@ -34,22 +35,42 @@ function formatEventForCalendar(event: UFCEvent): EventAttributes {
     date.getHours(),
     date.getMinutes(),
   ];
-  const duration: { hours: number } = { hours: 3 };
+
   const title = event.name;
   let description = "";
 
+  // For LoL: include metadata lines (BestOf / Round / Stream / Overview)
+  if (event.fightCard.length) {
+    description = `${event.fightCard.join("\n")}\n`;
+  }
+
+  // Append source URL
+  if (description.length) description += "\n";
+  description += `${event.url}`;
+
+  // Stamp when this was generated (Berlin)
+  const dateTimestr = new Date().toLocaleString("en-US", {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    timeZone: "Europe/Berlin",
+    timeZoneName: "short",
+  });
+  description += `\n\nAccurate as of ${dateTimestr}`;
+
   const location = event.location;
   const uid = event.url.href;
-  const calName = "HLTV";
+  const calName = "Gen.G (LoL)";
 
-  const calendarEvent = {
+  const calendarEvent: EventAttributes = {
     start,
-    duration,
     title,
     description,
-    location,
     uid,
     calName,
+    location,
+    productId: "adamgibbons/ics",
   };
 
   return calendarEvent;
